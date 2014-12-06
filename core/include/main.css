@@ -1,0 +1,528 @@
+html,body{
+	height:100%;
+	margin:0 4px;
+	font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+
+/*Start form elements style sheet*/
+.cap{font-weight:bold; text-decoration:underline; color:#ffffff}
+.menu{font-family:Tahoma;font-size:9px;color:#c4c4c4;font-weight:bold;text-decoration:none;}
+input.select {border:1px solid #666699; background-color: #F6f6f6;}
+input.button {font: 10px verdana, helvetica, tahoma, verdana, sans serif; font-weight: bold; border: solid 1px #666699;cursor:pointer;padding:5px;}
+input {font: 12px verdana, helvetica, tahoma, verdana, sans serif;border:1px solid #666699;}
+submit {border:1px solid #666699;font-weight:bold;font: 10px verdana, helvetica, tahoma, verdana, sans serif;cursor:pointer;}
+input.radio {font-family : Verdana; font-size : 11px;}
+textarea, select {font-family : Verdana; font-size : 12px; background-color : #ffffff; }
+input.checkbox {border:0 }
+form { display: inline; }
+/*End form elements style sheet*/
+.item_row_over{background-color:#c1d2ee;cursor:pointer;}
+.inactive_line{color:#858585;}
+
+.group_row1{background-color:#e3e3e3}
+.group_row2{background-color:#d7e7f5}
+.hide_it {
+	visibility:hidden;
+}
+.num_field{text-align:right;padding-right:3px;}
+.white_bg{background-color:#ffffff;}
+.table_list{width:100%;}
+.error_msg{color:#e60000;font-size:10pt;font-weight:bold;}
+.error_class_text{border:1px solid #e60000}
+.error_class{color:#e60000;font-weight:bold;}
+.link_standard , .link_standard a , .link_standard a:link , .link_standard a:active , .link_standard a:visited{color:#000000}
+.txtSearch{background-color:#efefef;}
+.main_tab_table{background-color:#8c8c8c;width:900px;}
+.popup_tab_table{background-color:#8c8c8c;width:700px;margin-top:0;}
+.po_table{font-size:8pt}
+#keyResults {
+	position: absolute;
+	background-color: #FFFFFF;
+	text-align: left;
+	border: 1px solid #000000;
+	display:none;
+	width:425px;
+	z-index:1000;
+	font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.suggest_link {
+    background-color: #FFFFFF;
+    padding: 2px 6px 2px 6px;
+}
+.suggest_link_over {
+    background-color: #3366CC;
+    padding: 2px 6px 2px 6px;
+    cursor: pointer;
+}
+
+.search_suggest {
+    position: absolute;
+    background-color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #000000;
+    display:none;
+    width:225px;
+    z-index:1000;
+    font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+.account_suggest {
+	position: absolute;
+	background-color: #FFFFFF;
+	text-align: left;
+	border: 1px solid #000000;
+	display:none;
+	width:425px;
+	z-index:1000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.function_menu {
+	position: absolute;
+	z-index:1000;
+	border: 1px solid #375182;
+	display:none;
+	max-width:400px;
+	background-color:#ffffff;
+	padding:1px;
+	color:#ffffff;
+	font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.function_menu_item {
+	background-color:#bbc7ce;
+	padding:4px;
+	margin-top:1px;
+	color:#000000;
+}
+.search_suggest_over {
+	background-color:blue;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+.ajax_placeholder {
+	font-weight:bold;
+	padding:5px;
+	font-size:12px;
+	color:#496ea2;
+	position:absolute;
+	display:none;
+	width:100px;
+	height:20px;
+	border:1px solid #496ea2;
+	background-color:#ffffff;
+	top:10px;
+	left:25px
+}
+
+.page_feedback {
+	font-weight:bold;
+	margin-left:15px;
+	display:none;
+	z-index:500;
+	padding:5px;
+	font-size:12px;
+	color:#00467f;
+	width:400px;
+	border-style:solid;
+	border-color:#00467f;
+	border-width: 15px 1px 1px 1px;
+	background-color:#ffffff;
+	position:absolute;
+	margin-left:0;
+	margin-top:10px
+}
+
+.status_tbl {
+	width:400px;
+	margin:10px;
+	border-color:#afbdc6 #556b78 #556b78 #afbdc6;
+	border-style:solid;
+	border-width:2px;
+	font-family:tahoma,arial;
+	font-size:10pt;
+	color:#000000;
+	background-image:url(../images/blue_fade.gif);
+	background-repeat:repeat-x;
+}
+
+.status_btn {
+	padding:0 10px;
+	color:#16387c;
+	font-weight:bold;
+	background-color:#ffffff;
+	border-color:#afbdc6 #556b78 #556b78 #afbdc6;
+	border-style:solid;
+	border-width:1px;
+	height:30px;
+	width:40%;
+	cursor:pointer;
+}
+.status_content {
+	padding:0;
+	margin:0;
+	color:#16387c;
+	background-color:#ffffff;
+	border-color:#afbdc6 #556b78 #556b78 #afbdc6;
+	border-style:solid;
+	border-width:1px;
+	height:100px;
+	width:95%;
+	overflow:auto;
+}
+
+.p-shadow {
+  position:absolute;
+  text-align:left;
+  width:200px;
+  float:left;
+  visibility:hidden;
+  background: url(../images/shadow.gif) no-repeat bottom right;
+  padding:5px;
+  border-left: 1px solid #a9a9a9;
+}
+
+
+.p-shadow div {
+  background-color:#ffffff;
+  margin-left:-5px;
+  margin-top:-5px;
+  padding:5px 5px 10px 5px;
+  font-size:8pt;
+}
+
+.panel
+{
+	background: #efefef;
+	color: #000000;
+	padding: 5px;
+	margin-top:0;
+	height:100%;
+	overflow:inherit;
+	margin-bottom:-18px;
+}
+.panelsurround
+{
+	background: #dfdfdf;
+	color: #000000;
+}
+
+.tborder
+{
+    font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #AAC8C8;
+}
+.tcat, .tcat a:link, tcat a:active, tcat a:hover
+{
+	background-color: #00467f;
+	color: #FFFFFF;
+	font: bold 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding:3px;
+	text-decoration:none;
+}
+
+.thead, .thead a:link, .thead a:visited, .thead a:hover
+{
+	background-color: #00467f;
+	color: #ffffff;
+	font: bold 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+
+.alt1, .alt1Active
+{
+	background-color: #EFEFEF;
+	color: #000000;
+}
+.alt1_nav {
+	background-color: #EFEFEF;
+	color:#22229c;
+	font-size:11px;
+}
+.alt1_nav A:link {color:#22229c;}
+.alt1_nav A:active {color:#22229c;}
+.alt1_nav A:visited {color:#22229c;}
+.alt1_nav A:hover {color:#22229c;}
+
+.vbmenu_control
+{
+	background-color: #ffffff;
+	color: #000000;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 3px 6px 3px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.smallfont
+{
+	font: 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+.toplink
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+.toplink a:link, .toplink a:active, .toplink a:visited {
+	color:#9f9f9f;
+}
+
+.toplink a:hover {
+	color:#ffffff;
+}
+
+
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 12px; }
+
+legend {font-size:12px;}
+/*ES Cal Style Sheet */
+/* Main Table Setup Incluidng Date Number Fonts, Size and Color */
+.mainTable {
+	background-color: #FFFFFF;
+	border: 1px solid #003366;
+ }
+
+/* Month and Year Row Setup */
+.monthYearRow {
+    line-height: 17pt;
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	background-image:  url(style/monthBg.gif);
+	}
+/* Month and Year Text Setup */
+.monthYearText {
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: Bold;
+	color: #252216;
+	}
+
+/* Day Names Row Setup */
+.dayNamesRow {
+    line-height: 11pt;
+	background-color: #F5F4D3;
+	text-align: center;
+	vertical-align: middle;
+	}
+/* Day Name Setup */
+.dayNamesText {
+    font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: Bold;
+	color: #433D27;
+	background-image:  url(style/dayBg.gif);
+	}
+
+/* Alignments, Font Face, Size and Color for Date Numbers and Row Height */
+.rows {
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 10px;
+	color: #433D27;
+    line-height: 15pt;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+/* Color of Today's Date */
+.today {
+	color: #CF0000;
+    }
+/*
+
+/* OverLIB popup text size */
+.oLib {
+    font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 10px;
+    }
+/*
+
+---------------------------------------------------------------------------
+The classes below determine how the calendar background markings will look.
+---------------------------------------------------------------------------
+
+Remove the "background-image..." lines to remove graphics as table cell background images.
+
+If you do use images, change the "background-color..." to a sililar color to that
+of your image. This will help persons with slow connections to see the event markings.
+
+You can optionally remove the "background-color..." lines to only use graphics.
+
+*/
+
+/* Normal Cell Background (date number with no event markings) */
+.s2 {
+	background-image:   url(style/%22cdef.gif%22);
+	background-color: #EEEEEE;
+	}
+/* Empty Cell Background (empty cells with no date numbers) */
+.s20 {
+	background-image:   url(style/%22cdef5.gif%22);
+	background-color: #EBEBEB;
+	}
+/* Mark Start Cell Background (usually a slashed graphic to show availability or solid for events) */
+.s21 {
+	background-image:   url(style/%22cdef2.gif%22);
+	background-color: #F5E0D8;
+	}
+/* Mark Solid Cell Background (solid marked event date background) */
+.s22 {
+	background-image:   url(style/%22cdef2.gif%22);
+	background-color: #F5E0D8;
+	}
+/* Mark End Cell Background (usually a slashed graphic to show availability or solid for events) */
+.s23 {
+	background-image:   url(style/%22cdef2.gif%22);
+	background-color: #F5E0D8;
+	}
+/* Mark End/Start Cell Background (usually a slashed graphic to show availability or solid for events) */
+.s24 {
+	background-image:   url(style/%22cdef2.gif%22);
+	background-color: #F5E0D8;
+	}
+
+/* End ES Cal Style */
+
+.highlightRowOn {
+	background-color:#ccffcc;
+}
+.highlightRowOff {
+	background-color:#dddddd;
+}
+
+.forum_thead {
+	background: 0A58AA url(style/%27images/gradient_thead.gif%27) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+
+.imagebuttonbackground {
+	background: #ECE9D8;
+	color: #000000;
+	padding: 1px;
+	border: none;
+}
+
+
+.imagebutton {
+	background: #ECE9D8;
+	border:1 solid #ECE9D8;
+}
+.imagebuttonover {
+	background-color: #C1D2EE;
+	border:1 solid #316AC5;
+	cursor:pointer;
+}
+
+/*Start footer CSS*/
+/* CSS Document */
+.footer_tbl {
+	width:100%;
+	text-align:center;
+	margin:5px 0 0 0;
+	background-color:#dfdfdf;
+	border-style:solid;
+	border-width:1px 0;
+	border-color:#9f9f9f;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4e78b3;
+}
+
+.footer_left {
+	font-size:8pt;
+	color:#4e78b3;
+}
+.footer_left A:link {
+	color:#4e78b3;
+	text-decoration:none;
+}
+.footer_left A:active {
+	color:#4e78b3;
+	text-decoration:none;
+}
+.footer_left A:visited {
+	color:#4e78b3;
+	text-decoration:none;
+}
+.footer_left A:hover {
+	color:#4e78b3;
+	text-decoration:underline;
+}
+/*End footer style sheet*/
+
+/*Start Tab links style sheet*/
+.menutitle{
+cursor:pointer;
+color:blue;
+width:100px;
+text-align:left;
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+
+a:hover{
+color:#7ac142;
+}
+
+#tablinks a {
+color:#000000;
+text-decoration:none;
+}
+
+#tablinks a:hover {
+color:#000000;
+}
+
+#leftmenu a:hover{
+color:#007100;
+}
+
+.footlinks{
+font: normal 11px Verdana;
+}
+
+.footlinks a{
+text-decoration: none;
+color: black;
+}
+/*End Tab links style sheet*/
+
+/*Start top navigation style sheet*/
+td.ygmabk { background-color:#efefef;border-style:solid;border-width:1px 0;	border-color:#9f9f9f; }
+td.ygmatcrn { background:#efefef url(style/images/uh_tcrn.gif) bottom left no-repeat; }
+td.ygmatcrnb { background:#efefef url(style/images/uh_tcrn_b.gif) bottom right no-repeat; }
+td.ygmacrn { background: url(style/images/uh_bk.gif) repeat-x; }
+td.ygmacrnb { background:#fff url(style/images/uh_crn_b.gif) repeat-x; }
+td.ygmabk input { font:110% verdana,geneva,sans-serif; }
+#ygma td { margin:0; text-align:left; }
+#ygma .ygbt { background:#dcdcdc; }
+#ygmalinks { padding:0px 10px 2px 10px; }
+.ygmabk a { color:#000; text-decoration:none;}
+#ygmasearch { padding-right:6px; }
+#ygmalogo { margin:3px 5px 0 0 ; }
+#ygmagreet { padding:5px 0 5px 0; vertical-align:top; line-height:12px; }
+#ygmagreet a { text-decoration:none}
+td#ygmaproplinks { vertical-align:top; padding:2px 0 10px 0; text-align:right; }
+/*End top navigation style sheet*/

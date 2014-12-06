@@ -1,0 +1,24 @@
+.top{
+	width:278px;
+	background-color:#efefef;
+	border-top:1px solid #9f9f9f;
+	border-bottom:1px solid #9f9f9f;
+	margin:5px 0;
+	font-weight:bold;
+	padding:3px 
+}
+.body{
+	width:273px;
+	background-color:#efefef;
+	border:1px solid #9f9f9f;
+	margin:5px 0;
+	height:225px;
+	overflow:auto;
+	padding:5px;
+}
+.bottom{
+	width:283px;
+	margin:5px 0;
+	padding:0px;
+	text-align:left;
+}
